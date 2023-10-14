@@ -27,12 +27,12 @@ const previous=()=>{
     <h1>Image Carousel</h1>
     <div className='gallary'>
     {
-        index===0?(<button style={{border:'none',backgroundColor:'white'}}></button>):(<button onClick={previous}><box-icon name='skip-previous'></box-icon></button>)
+        index===0?(<button style={{border:'none',backgroundColor:'white'}}></button>):(<button onClick={previous} style={{left:"0"}}><box-icon name='skip-previous'></box-icon></button>)
     }
     
     <img src={images[index]} className='images'></img>
     {
-        index===images.length-1?(<button style={{border:'none',backgroundColor:'white'}}></button>):(<button onClick={next}><box-icon name='skip-next'></box-icon></button>)
+        index===images.length-1?(<button style={{border:'none',backgroundColor:'white'}}></button>):(<button onClick={next} style={{right:"0"}}><box-icon name='skip-next'></box-icon></button>)
     }
 
 </div>

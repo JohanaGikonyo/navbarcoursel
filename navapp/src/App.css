@@ -39,4 +39,40 @@
 .carousel-next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
+.content{
+  display: flex;
+  background-color: orange;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  flex-wrap: nowrap;
+  padding: 10px;
+  margin: 2%;
+  width: 50%;
+  height: 75%;
+}
+.content li{
+  list-style: none;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: azure;
+}
+.contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts input{
+  border: none;
+  background-color: antiquewhite;
+  outline: none;
+  border-bottom: 3px solid black;
+  border-radius: 5px;
+}
+.contacts button{
+  border-radius: 5px;
+  background-color: aliceblue;
+  outline: none;
+  border: none;
+}

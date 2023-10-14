@@ -1,0 +1,35 @@
+.products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.eachitem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: aqua;
+    width: auto;
+    margin: 5px;
+    border-radius: 10px;
+    align-items: center;
+}
+.descriptions{
+    background-color: azure;
+    border-radius: 10px;
+
+    padding: 5px;
+    text-align: center;
+}
+.products img{
+    height: 200px;
+    width: 200px;
+}
+@media (max-width:480px) {
+    .descriptions{
+        width: 100%;
+    }
+    
+}
