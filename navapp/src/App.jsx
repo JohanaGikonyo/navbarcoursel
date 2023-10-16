@@ -6,7 +6,7 @@ import Navbar from './Navbar/Navbar'
 import Home from './Navbar/Home'
 import Contact from './Navbar/Contact'
 import About from './Navbar/About'
-import Products from './Navbar/products'
+import Products from './Navbar/Products'
 import { Link, Route, Routes } from 'react-router-dom'
 
 function App() {
