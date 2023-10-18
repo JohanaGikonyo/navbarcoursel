@@ -1,20 +1,18 @@
-.images{
+.slider{
+   
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.slider img{
     height: 200px;
     width: 200px;
-}
-.gallary{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.gallary button{
-    height: 50px;
-    background-color: bisque;
-    border: solid;
-    border-radius:  7px;
-    margin: 6px;
+    margin-left: 0%;
     
 }
+
+  
 
   
