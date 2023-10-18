@@ -3,8 +3,7 @@ import { useState } from 'react'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-//import LeftArrow from 'react-slick/lib/LeftArrow'; 
-//import RightArrow from 'react-slick/lib/RightArrow';
+
 import img1 from './images/pexels-agung-pandit-wiguna-3401403.jpg'
 import img2 from './images/pexels-cottonbro-studio-4709832.jpg'
 import img3 from './images/pexels-linkedin-sales-navigator-1251861.jpg'
@@ -14,21 +13,13 @@ import img6 from './images/pexels-tam-hoang-1007066.jpg'
 import './home.css'
 import React from 'react';
 
-// Custom left arrow component
-// const CustomLeftArrow = (props) => {
-//     return <button {...props}>Custom Left Arrow</button>;
-//   };
-  
-//   const CustomRightArrow = (props) => {
-//     return <button {...props}>Custom Right Arrow</button>;
-//   };
+
 
 function Home(){
 
     const settings={
             autoplay:true,            // Auto-play the carousel
             dots: true,                // Show navigation dots
-            
            prevArrow: false, // Provide the custom LeftArrow component
             nextArrow: false,         // Hide the next arro
     }
