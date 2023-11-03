@@ -41,7 +41,7 @@ document.removeEventListener('click', handleOutsideClick);
     <ul className={`links ${isopen?'open':''}`}>
     <box-icon name='home' ></box-icon><li><Link to='/home'>Home</Link></li>
     <box-icon name='chat' type='solid' ></box-icon><li><Link to='/about'>About</Link></li>
-    <box-icon name='chat' type='solid' ></box-icon><li><Link to='/productss'>Products</Link></li>
+    <box-icon name='chat' type='solid' ></box-icon><li><Link to='/'>Products</Link></li>
     <box-icon name='phone-call' ></box-icon> <li><Link to='/contact'>Contact</Link></li>
         </ul>  
     </nav>
