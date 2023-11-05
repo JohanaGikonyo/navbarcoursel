@@ -38,18 +38,18 @@
   }
   
 .scroll-container {
-    --spacer:2rem;
+    /* --spacer:2rem; */
 display: grid;
 grid-auto-flow: column;
- gap: var(--_spacer);
+ gap: var(--size-3);
 overflow-x: auto;
-grid-auto-columns: 21%;
+/* grid-auto-columns: 21%; */
 padding: 0 var(--_spacer) var(--spacer);
 overscroll-behavior-inline: contain;
   scroll-snap-type: mandatory ;
   scroll-snap-align: auto;
 }
-  .eachitem-scroll{
+  /* .eachitem-scroll{
     display: grid;
     grid-template-columns: min-content;
     gap: var(--_spacer);
@@ -57,17 +57,19 @@ padding: var(--size-3);
 background: var(--surface-2);
 border-radius: var(--radius-2);
 box-shadow: var(--shadow-3);
-  }
-  .eachitem-scroll > img{
+  } */
+  /* .eachitem-scroll > img{
 inline-size: 100%;
 aspect-ratio: 16/9;
 object-fit: cover;
-  }
+  } */
   
-  /* .scroll-container img {
+  .scroll-container img {
     height: 100px;
     width: 150px;
-  } */
+    margin: 10px;
+    padding: 10px;
+  }
   
   
   
