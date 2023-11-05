@@ -33,3 +33,18 @@
     }
     
 }
+.scroll-container{
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.scroll-container > * {
+    display: inline-block;
+}
+@media (max-width:480px) {
+    .scroll-container{
+        overflow-x: auto;
+        white-space: normal;
+    }
+    
+}
