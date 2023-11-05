@@ -6,8 +6,7 @@ function Products() {
   return (
     <>
     <div className='scroll-container'>
-    <div className='products'>
-      {products.map((item) => (
+    {products.map((item) => (
         <div key={item.id} className='eachitem'>
           <img src={item.image} alt={item.description} />
           <div className='descriptions'>
@@ -20,7 +19,7 @@ function Products() {
         </div>
       ))}
     </div>
-    </div>
+    
       <div className='products'>
       {products.map((item) => (
         <div key={item.id} className='eachitem'>

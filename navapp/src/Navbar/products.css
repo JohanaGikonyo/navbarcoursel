@@ -38,6 +38,10 @@
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
 }
+.scroll-container img{
+    height: 100px;
+    width: 150px;
+}
 .scroll-container > * {
     display: inline-block;
 }
