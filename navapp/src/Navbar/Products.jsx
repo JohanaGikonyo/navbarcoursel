@@ -8,7 +8,7 @@ function Products() {
     <>
 <div className='info'>
   <img src={img1} alt='image'/>
-  <div>
+  <div className='info-child'>
     <h3>JKTECHS Is an electronic shop that offers electronic Services</h3>
   <h4>We offer Sales Country wide. We also do Cyber Services<br/> Such as Printing,
   Scanning, Photocopying, Forms Applications and photo Printing.

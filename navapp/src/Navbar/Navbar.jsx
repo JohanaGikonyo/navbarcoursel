@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Home from './Home'
 import Contact from './Contact'
 import About from './About'
+import img2 from './images/open.jpg'
 //import { box-icon } from 'boxicons';
 
 import './navbar.css'
@@ -39,6 +40,7 @@ document.removeEventListener('click', handleOutsideClick);
     <div className='navbar-brand'>
         
         <NavLink className='navbar-title' to='/' onClick={scrollToTop}>JKTECHS</NavLink>
+        <img src={img2}/>
        
     </div>
     <span className='toggle' onClick={toggleNavbar}>

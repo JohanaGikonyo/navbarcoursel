@@ -94,13 +94,39 @@ border-radius: 10px;
   }
   .info{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
+    margin: 20px;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: bisque;
   }
   .info img{
     height: 300px;
     width: 300px;
     object-fit: contain;
+    margin: 20px;
+
   }
+  .info-child{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .info-child p{
+    color: red;
+  }
+  .info-child h3{
+    color: gold;
+  }
+  .info-child h5{
+    color: green;
+  }
+  .info-child h4{
+    color: orange;
+  }
+
   
   
