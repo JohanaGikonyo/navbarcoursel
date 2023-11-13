@@ -41,7 +41,7 @@ function App() {
     
     <div class="contact-info">
       <p>Email: info@jktechs.com</p>
-      <p>Phone: +254 (10) 819-619</p>
+      <p>Phone: +254 (10) 718-619</p>
     </div>
 
     <p> @copywrite; {new Date().toDateString()} JKTECHS Traders. All rights reserved.</p>
