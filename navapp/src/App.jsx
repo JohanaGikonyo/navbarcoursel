@@ -7,10 +7,15 @@ import Home from './Navbar/Home'
 import Contact from './Navbar/Contact'
 import About from './Navbar/About'
 import Products from './Navbar/Products'
-import { Link, Route, Routes } from 'react-router-dom'
+import { Link, Route, Routes,NavLink } from 'react-router-dom'
 
 function App() {
- 
+ const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Optional: Adds smooth scrolling behavior
+    });
+  };
 
   return (
     <>
@@ -22,6 +27,25 @@ function App() {
             <Route path='/contact' element={<Contact/>}></Route>
             
         </Routes>
+        <div className='upwardbtn'>
+        <box-icon name='chevrons-up' onClick={scrollToTop}></box-icon>
+        </div>
+        <footer>
+        <nav>
+        <NavLink to='/home' onClick={scrollToTop}>Home</NavLink>
+        <NavLink to='/' onClick={scrollToTop}>Products</NavLink>
+        <NavLink to='/about' onClick={scrollToTop}>About</NavLink>
+        <NavLink to='/contact' onClick={scrollToTop}>Contact</NavLink>
+     
+    </nav>
+    
+    <div class="contact-info">
+      <p>Email: info@jktechs.com</p>
+      <p>Phone: +254 (10) 819-619</p>
+    </div>
+
+    <p> @copywrite; {new Date().toDateString()} JKTECHS Traders. All rights reserved.</p>
+        </footer>
     </>
   )
 }

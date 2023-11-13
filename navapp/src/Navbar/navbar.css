@@ -19,9 +19,11 @@
     justify-content: space-between;
 
 }
-.navbar-tittle{
+.navbar-title {
     font-size: 24px;
     margin-left: 0px;
+    text-decoration: none;
+    color: greenyellow;
 }
 .links{
     list-style: none;

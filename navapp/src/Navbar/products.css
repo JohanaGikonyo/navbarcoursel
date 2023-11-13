@@ -4,6 +4,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    
 }
 .eachitem{
     display: flex;
@@ -15,6 +16,7 @@
     margin: 5px;
     border-radius: 10px;
     align-items: center;
+  ;
 }
 .descriptions{
     background-color: azure;
@@ -27,6 +29,7 @@
     height: 200px;
     width: 200px;
     object-fit: contain;
+    
 }
 @media (max-width:480px) {
     .descriptions{
@@ -49,28 +52,55 @@ padding: 0 var(--_spacer) var(--spacer);
 overscroll-behavior-inline: contain;
   scroll-snap-type: mandatory ;
   scroll-snap-align: auto;
+  position: relative
 }
-  /* .eachitem-scroll{
-    display: grid;
-    grid-template-columns: min-content;
-    gap: var(--_spacer);
-padding: var(--size-3);
-background: var(--surface-2);
-border-radius: var(--radius-2);
-box-shadow: var(--shadow-3);
-  } */
-  /* .eachitem-scroll > img{
-inline-size: 100%;
-aspect-ratio: 16/9;
-object-fit: cover;
-  } */
+  
   
   .scroll-container img {
     height: 100px;
     width: 150px;
     margin: 10px;
     padding: 10px;
+    border-radius: 10px;
+   
   }
+  .cost{
+    position: absolute;
+    background-color: rgb(74, 245, 74);
+    top: 50%;
+    width: 50px;
+    border-radius: 10px;
+  }
+  .costs{
+border-radius: 10px;
+    background-color: rgb(74, 245, 74);
+    top: 50%;
+    width: 50px;
+  }
+  .desc{
+    color: red;
+  }
+  .eachitem-scroll{
+    display: flex;
+    flex-direction: column;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+  .cart{
   
+  }
+  .info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .info img{
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+  }
   
   
