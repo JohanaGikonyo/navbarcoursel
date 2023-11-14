@@ -166,6 +166,7 @@ position: fixed;
 
 .expandable-content {
   margin-top: 20px;
+ 
   
 }
 
@@ -174,4 +175,9 @@ position: fixed;
   color: #007bff;
   display: flex;
 
+}
+.expandable-content h5{
+  margin: 15px;
+  justify-content: space-between;
+  color: orange;
 }

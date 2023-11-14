@@ -67,8 +67,8 @@ function App() {
 
   const additionalContent3 = isExpanded3 ? (
     <div>
-      <h5>Facebook</h5>
-      <h5>Instagram</h5>
+      <h5>Facebook </h5>
+      <h5>Instagram </h5>
       <h5>Twitter</h5>
       <h5>Youtube</h5>
       <h5>Whatsapp</h5>
@@ -111,7 +111,14 @@ function App() {
         {additionalContent3}
       
       </div>
+      <div style={{display:"flex"}}>
+      <div><box-icon type='logo' name='whatsapp'></box-icon></div>
+      <div><box-icon type='logo' name='instagram'></box-icon></div>
+      <div><box-icon type='logo' name='facebook'></box-icon></div>
+      <div><box-icon type='logo' name='youtube'></box-icon></div>
+</div>
     </div>
+    
         <footer>
         <nav>
         <NavLink to='/home' onClick={scrollToTop}>Home</NavLink>
