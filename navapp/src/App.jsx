@@ -7,7 +7,7 @@ import Home from './Navbar/Home'
 import Contact from './Navbar/Contact'
 import About from './Navbar/About'
 import Products from './Navbar/Products'
-import ItemList from './Navbar/ItemList'
+import ItemList from './Navbar/Itemlist'
 import { Link, Route, Routes,NavLink } from 'react-router-dom'
 
 function App() {
