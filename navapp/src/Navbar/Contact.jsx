@@ -25,10 +25,16 @@ function Contact() {
   //   const updatedNotes = notes.filter((note) => note.id !== noteId);
   //   setNotes(updatedNotes);
   // };
+  const handlecall=()=>{
+    window.location.href=`tel:${254710718619}`
+  }
+  const handlemessage=()=>{
+    window.location.href=`sms:${254710718619}`
+  }
 
   return (
     <div className='contacts'>
-      <h1>Add Contacts</h1>
+      <h1>Save  Your Contact here:</h1>
       <form onSubmit={(e) => {
           e.preventDefault();
           //const inputField = e.target.querySelector('input[type="text"]');
@@ -52,6 +58,13 @@ function Contact() {
         ))}
       </ul>
       
+      
+<h2>Contact information. Click to:</h2>
+<div className='calls'>
+<div onClick={handlecall}><p>Call</p><box-icon type='solid' name='phone-call'></box-icon></div>
+<p>or</p>
+<div onClick={handlemessage}>Message<box-icon name='message'></box-icon></div>
+      </div>
     </div>
   );
 }

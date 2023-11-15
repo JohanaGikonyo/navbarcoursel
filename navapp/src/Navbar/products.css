@@ -9,9 +9,9 @@
 .eachitem{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: aqua;
+    background-color: bisque;
     width: auto;
     margin: 5px;
     border-radius: 10px;
@@ -19,7 +19,8 @@
   ;
 }
 .descriptions{
-    background-color: azure;
+  background-color: bisque;
+    
     border-radius: 10px;
 
     padding: 5px;
@@ -83,12 +84,15 @@ border-radius: 10px;
   .eachitem-scroll{
     display: flex;
     flex-direction: column;
-    background-color: blanchedalmond;
+    background-color: azure;
     border-radius: 10px;
     justify-content: space-evenly;
     align-items: center;
+    transition: background-color 0.3s ease;
 
   }
+
+  
   .cart{
   
   }
@@ -119,13 +123,25 @@ border-radius: 10px;
     color: red;
   }
   .info-child h3{
-    color: gold;
+    color: blue;
   }
   .info-child h5{
     color: green;
   }
   .info-child h4{
     color: orange;
+  }
+  .eachitem-scroll:hover{
+    transform: translate(5px, 10px);
+    
+    border: 1px solid #2980b9;
+    cursor: cell;
+  }
+  .eachitem:hover{
+    transform: translate(5px, 10px);
+
+    border: 1px solid #2980b9;
+    cursor: cell;
   }
 
   

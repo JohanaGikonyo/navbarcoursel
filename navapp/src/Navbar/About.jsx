@@ -1,6 +1,7 @@
 import React from 'react'
 import  { useEffect } from 'react'
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import './about.css'
 import img1 from './images/pexels-agung-pandit-wiguna-3401403.jpg'
 import img2 from './images/pexels-cottonbro-studio-4709832.jpg'
@@ -31,6 +32,12 @@ useEffect(()=>{
 },[])
 const currentImage = images[currentIndex];
 
+const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Optional: Adds smooth scrolling behavior
+    });
+  };
   return (
     <>
 <div className='image-slider'>
@@ -39,6 +46,8 @@ const currentImage = images[currentIndex];
         style={{ backgroundImage: `url(${currentImage})` }}
       />
 </div>
+
+
     </>
   )
 }

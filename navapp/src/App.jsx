@@ -7,7 +7,7 @@ import Home from './Navbar/Home'
 import Contact from './Navbar/Contact'
 import About from './Navbar/About'
 import Products from './Navbar/Products'
-import ItemList from './Navbar/Itemlist'
+import ItemList    from './Navbar/Itemlist'
 import { Link, Route, Routes,NavLink } from 'react-router-dom'
 
 function App() {
@@ -74,6 +74,13 @@ function App() {
       <h5>Whatsapp</h5>
     </div>
   ) : null;
+
+  const handlecall=()=>{
+    window.location.href=`tel:${254710718619}`
+  }
+  const handlemessage=()=>{
+    window.location.href=`sms:${254710718619}`
+  }
   return (
     <>
     
@@ -111,11 +118,19 @@ function App() {
         {additionalContent3}
       
       </div>
+      <div className='calls'>
+<div onClick={handlecall}><p>Call</p><box-icon type='solid' name='phone-call'></box-icon></div>
+<p>or</p>
+<div onClick={handlemessage}>Message<box-icon name='message'></box-icon></div>
+      </div>
+      <div className='next'>
       <div style={{display:"flex"}}>
-      <div><box-icon type='logo' name='whatsapp'></box-icon></div>
+      <a href='https://wa.me/254710718619'><div><box-icon type='logo' name='whatsapp'></box-icon></div></a>
       <div><box-icon type='logo' name='instagram'></box-icon></div>
       <div><box-icon type='logo' name='facebook'></box-icon></div>
       <div><box-icon type='logo' name='youtube'></box-icon></div>
+</div>
+<NavLink to='/about'  onClick={scrollToTop}><box-icon type='solid' name='chevrons-right'></box-icon></NavLink>
 </div>
     </div>
     
