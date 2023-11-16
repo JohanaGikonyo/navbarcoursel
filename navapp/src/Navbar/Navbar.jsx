@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Home from './Home'
 import Contact from './Contact'
 import About from './About'
 import img2 from './images/open.jpg'
@@ -47,10 +46,10 @@ document.removeEventListener('click', handleOutsideClick);
 {isopen?<box-icon name='x'></box-icon>:<box-icon name='menu-alt-right'></box-icon>}
         </span>
     <ul className={`links ${isopen?'open':''}`}>
-    <box-icon name='home' ></box-icon><li><Link to='/home'onClick={scrollToTop}>Home</Link></li>
-    <box-icon name='chat' type='solid' ></box-icon><li><Link to='/about' onClick={scrollToTop}>About</Link></li>
     <box-icon name='chat' type='solid' ></box-icon><li><Link to='/' onClick={scrollToTop}>Products</Link></li>
+    <box-icon name='chat' type='solid' ></box-icon><li><Link to='/about' onClick={scrollToTop}>About</Link></li>
     <box-icon name='phone-call' ></box-icon> <li><Link to='/contact' onClick={scrollToTop}>Contact</Link></li>
+    <box-icon name='home' ></box-icon><li><Link to='/login'onClick={scrollToTop}>Login</Link></li>
         </ul>  
     </nav>
   )

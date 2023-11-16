@@ -1,55 +1,51 @@
-import React from 'react'
-import  { useEffect } from 'react'
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import './about.css'
-import img1 from './images/pexels-agung-pandit-wiguna-3401403.jpg'
-import img2 from './images/pexels-cottonbro-studio-4709832.jpg'
-import img3 from './images/pexels-linkedin-sales-navigator-1251861.jpg'
-import img4 from './images/pexels-mikhail-nilov-7776963.jpg'
-import img5 from './images/pexels-rdne-stock-project-7713135.jpg'
-import img6 from './images/pexels-tam-hoang-1007066.jpg'
+import React, { useEffect, useState } from 'react';
+import { aboutimages,scroll } from '../Helpers/products';
 
+import './about.css';
 
 function About() {
-    const images=[
-        img1,img2,img3,img4,img5,img6
-    ];
-    const animationDuration=3000;
-    
-const [currentIndex, setCurrentIndex] = useState(0);
-useEffect(()=>{
-    const timer=setInterval(()=>{
-        setCurrentIndex((prevIndex)=>(prevIndex===images.length-1?
-            0:prevIndex+1));
+  const animationDuration = 3000;
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    },animationDuration)
-    return ()=>{
-        clearInterval(timer);
-    };
-    
-    
-},[])
-const currentImage = images[currentIndex];
 
-const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth', // Optional: Adds smooth scrolling behavior
-    });
-  };
   return (
-    <>
-<div className='image-slider'>
-<div
-        className="image"
-        style={{ backgroundImage: `url(${currentImage})` }}
-      />
-</div>
-
-
-    </>
-  )
+    <div className='carousel-container'>
+      <div className='image-slider'>
+        <div className='columns '>
+          {aboutimages.map((item,index) => (
+            <div key={item.id} className='aboutimages'>
+            <img  src={item.image} alt={`image-${index}`} />
+            <h3 className='desc'>{item.description}</h3>
+            <h4 className='costs'>$ {item.cost}</h4>
+            <h5>Orders left :{"  "+item.remaining}</h5>
+            <button className='cart'>Add Cart</button>
+            </div>
+          ))}
+          {scroll.map((item,index) => (
+            <div key={item.id} className='aboutimages'>
+            <img  src={item.image} alt={`image-${index + aboutimages.length}`} />
+            <h3 className='desc'>{item.description}</h3>
+            <h4 className='costs'>$ {item.cost}</h4>
+            <h5>Orders left :{"  "+item.remaining}</h5>
+            <button className='cart'>Add Cart</button>
+            
+            </div>
+          ))}
+        </div>
+        <div className='columndesc'>
+        <h2>JKTECHS iS a Business that was started in the Year 2020.</h2>
+         <h3>It was started by the CEO Madam Julia Kihiu, in Laikipia County, and it has now grown, slowly.</h3> 
+         <div>
+          <h3>We are Grad to announce that we are at your Gate, Country Wide.
+          You need just kindly put your order, then we shall come back to you instantly.
+          </h3>
+          <p>Our products are Oringinal copies, directly from manufactures</p>
+          <h3>Visit us at Nyahururu Shopping center, or contact us.</h3>
+         </div>  
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default About
+export default About;

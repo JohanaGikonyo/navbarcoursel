@@ -15,6 +15,20 @@ import img14 from './productimages/screenguard.jpg'
 import img15 from './productimages/socket.jpg'
 import img16 from './productimages/torch.jpg'
 import img17 from './productimages/type-b charger.jpg'
+import img18 from './productimages/bt speaker.jpg'
+import img19 from './productimages/bt speaker2.jpg'
+import img20 from './productimages/handbag.jpg'
+import img21 from './productimages/handbag2.jpg'
+import img22 from './productimages/speaker3.jpg'
+import img23 from './productimages/speaker4.jpg'
+import img24 from './productimages/speaker5.jpg'
+import img25 from './productimages/speaker6.jpg'
+import img26 from './productimages/speaker7.jpg'
+import img27 from './productimages/wach4.jpg'
+import img28 from './productimages/watch1.jpg'
+import img29 from './productimages/watch2.jpg'
+import img30 from './productimages/watch5.jpg'
+
 export const products=[
     {
         id:1,
@@ -180,3 +194,98 @@ export const notes=[
 }
 
   ]
+  export const aboutimages=[
+    {
+        id:1,
+    image:img18,
+    description:"BT Speaker",
+    cost:"7 off",
+    remaining:10 
+    },
+    {
+        id:2,
+    image:img19,
+    description:"BT Speaker",
+    cost:"8 off",
+    remaining:20
+    },
+    {
+        id:3,
+    image:img20,
+    description:"Hand bag",
+    cost:"5 off",
+    remaining:50 
+    },
+    {
+        id:4,
+    image:img21,
+    description:"Handbag for Ladies",
+    cost:"7 off",
+    remaining:30 
+    },
+    {
+        id:5,
+    image:img22,
+    description:"Bt Speaker",
+    cost:"9 off",
+    remaining:20 
+    },
+    {
+        id:6,
+    image:img23,
+    description:"BT Speaker",
+    cost:"7 off",
+    remaining:10 
+    },
+    {
+        id:7,
+    image:img24,
+    description:"BT Speaker",
+    cost:"7 off",
+    remaining:10 
+    },
+    {
+        id:8,
+    image:img25,
+    description:"BT Speaker",
+    cost:"7 off",
+    remaining:10 
+    },
+    {
+        id:9,
+    image:img26,
+    description:"BT Speaker",
+    cost:"7 off",
+    remaining:10 
+    },
+    {
+        id:10,
+    image:img27,
+    description:"Ladies watch",
+    cost:"5 off",
+    remaining:20 
+    },
+    {
+        id:11,
+    image:img28,
+    description:"Ladies watch",
+    cost:"7 off",
+    remaining:10 
+    },
+    {
+        id:12,
+    image:img29,
+    description:"Ladies watch",
+    cost:"5 off",
+    remaining:11 
+    },
+    {
+        id:13,
+    image:img28,
+    description:"Ladies watch",
+    cost:"5 off",
+    remaining:10 
+    }
+
+  ]
+

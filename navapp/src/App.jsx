@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Navbar/Navbar'
-import Home from './Navbar/Home'
+import Login from './Navbar/Login'
 import Contact from './Navbar/Contact'
 import About from './Navbar/About'
 import Products from './Navbar/Products'
@@ -87,7 +87,7 @@ function App() {
       <Navbar/>
       <ItemList/>
       <Routes>
-            <Route path='/home' element={<Home/>}></Route>
+            <Route path='/login' element={<Login/>}></Route>
             <Route path='/about' element={<About/>}></Route>
           <Route path='/' element={<Products/>}></Route>
             <Route path='/contact' element={<Contact/>}></Route>
@@ -136,8 +136,9 @@ function App() {
     
         <footer>
         <nav>
-        <NavLink to='/home' onClick={scrollToTop}>Home</NavLink>
+        
         <NavLink to='/' onClick={scrollToTop}>Products</NavLink>
+        <NavLink to='/login' onClick={scrollToTop}>Login</NavLink>
         <NavLink to='/about' onClick={scrollToTop}>About</NavLink>
         <NavLink to='/contact' onClick={scrollToTop}>Contact</NavLink>
      

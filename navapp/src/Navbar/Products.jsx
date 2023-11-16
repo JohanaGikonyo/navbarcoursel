@@ -40,7 +40,7 @@ function Products() {
         <div key={item.id} className='eachitem'>
           <img src={item.image} alt={item.name} />
           <div className='descriptions'>
-            <h3 className='desc'>{item.name}</h3>
+          <h3 className='desc'>{item.name}</h3>
             <h4 className='costs'>$ {item.cost}</h4>
             <h5>Orders left :{"  "+item.remaining}</h5>
             <button className='cart'>Add Cart</button>
