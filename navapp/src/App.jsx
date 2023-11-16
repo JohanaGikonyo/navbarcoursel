@@ -130,6 +130,7 @@ function App() {
       <div><box-icon type='logo' name='facebook'></box-icon></div>
       <div><box-icon type='logo' name='youtube'></box-icon></div>
 </div>
+<p></p><p></p><p style={{color:"blue"}}>More</p>
 <NavLink to='/about'  onClick={scrollToTop}><box-icon type='solid' name='chevrons-right'></box-icon></NavLink>
 </div>
     </div>
