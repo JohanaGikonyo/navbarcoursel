@@ -163,7 +163,7 @@ border-radius: 10px;
     
   }
   .columns{
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     /* /* scroll-behavior: smooth;
     padding: 0 var(--_spacer) var(--spacer); */
 /* overscroll-behavior-block: contain;
