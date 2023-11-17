@@ -8,7 +8,7 @@ function Cart() {
   const [user, setUser] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5173/getcustomers')
+    axios.get('https://jktechsserver.vercel.app/getcustomers')
       .then(user => {
           console.log('Data from server:', user.data);
         setUser(user.data);
@@ -20,9 +20,9 @@ function Cart() {
 
   return (
     <div className='customer'>
-      <h2>Dear <p>{location.state}</p></h2>
+      <h2>Dear <p>{location.state.id}</p></h2>
       <h3>You are our beloved Customer</h3>
-      <h4>Your order Message is: <p>{location.state}</p></h4>
+      <h4>Your order Message is: <p>{location.state.mes}</p></h4>
       <h5>We really appreciate your Support</h5>
       <div>
   <table>
