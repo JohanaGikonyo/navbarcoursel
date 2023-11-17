@@ -5,7 +5,7 @@ function Cart() {
     const location=useLocation()
   return (
     <div>
-    <h2>Dear {location.state.id}</h2>
+    <h2>Dear {location.state}</h2>
     </div>
   )
 }
