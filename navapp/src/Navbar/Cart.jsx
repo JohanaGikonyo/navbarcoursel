@@ -8,7 +8,7 @@ function Cart() {
   const [user, setUser] = useState([]);
 
   useEffect(() => {
-    axios.get('https://jktechsserver.vercel.app/getcustomers')
+    axios.get('https://jktechsserver.vercel.app//getcustomers')
       .then(user => {
           console.log('Data from server:', user.data);
         setUser(user.data);

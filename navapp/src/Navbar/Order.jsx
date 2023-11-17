@@ -26,7 +26,7 @@ function Login(){
     const history=useNavigate();
     const handleSubmit=async(e)=>{
         e.preventDefault();
-try{ await axios.post('https://jktechsserver.vercel.app/login',
+try{ await axios.post('https://jktechsserver.vercel.app//login',
 {email,phone,message}
 
 )
