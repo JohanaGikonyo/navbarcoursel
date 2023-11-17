@@ -132,13 +132,13 @@ border-radius: 10px;
     color: orange;
   }
   .eachitem-scroll:hover{
-    transform: translate(5px, 10px);
+    /* transform: translate(5px, 10px); */
     
     border: 1px solid #2980b9;
     cursor: cell;
   }
   .eachitem:hover{
-    transform: translate(5px, 5px);
+    /* transform: translate(5px, 5px); */
      margin: 10px;
     border: 1px solid #2980b9;
     cursor: cell;
