@@ -3,11 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Navbar/Navbar'
-import Login from './Navbar/Login'
+import Login from './Navbar/Order'
 import Contact from './Navbar/Contact'
 import About from './Navbar/About'
 import Products from './Navbar/Products'
-import Signin from './Navbar/Signin'
+import Signin from './Navbar/Members'
 import ItemList    from './Navbar/Itemlist'
 import Cart from './Navbar/Cart'
 import { Link, Route, Routes,NavLink } from 'react-router-dom'
@@ -149,7 +149,7 @@ function App() {
      
     </nav>
     
-    <div class="contact-info">
+    <div className="contact-info">
       <p>Email: info@jktechs.com</p>
       <p>Phone: +254 (10) 718-619</p>
     </div>

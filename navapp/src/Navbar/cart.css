@@ -1,0 +1,10 @@
+.customer{
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.customer p{
+    color: blue;
+}

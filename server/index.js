@@ -52,8 +52,37 @@ catch(e){
   
 })
 
+const memberSchema=new mongoose.Schema({
+    email:{type:String}, phone:{type:Number}
+})
+const member=mongoose.model('member',memberSchema)
+ module.exports=member;
+ app.post('/signin',async (req,res)=>{
+const {email, phone}=req.body;
 
-
+try{
+    const check= await member.findOne({email:email})
+if(check){
+    res.json('exist')
+    console.log("An existing customer")
+}
+else {
+    const newmember=new member({email,phone})
+    await newmember.save();
+    res.json('notexist');
+    console.log("You have new member");
+}
+}
+catch(e){
+    console.log(e)
+}
+ })
+ app.get('/getcustomers',(req,res)=>{
+    customer.find()
+    .then((user)=>{res.json(user)})
+    .catch((e)=>{console.error(e)})
+ })
+ 
 
 app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname,"/index.html"))

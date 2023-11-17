@@ -7,18 +7,29 @@ import axios from 'redaxios'
 
 import './home.css'
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 
 function Signin(){
+    const history=useNavigate();
     const [email,setEmail]=useState('')
     const [phone, setPhone]=useState();
      const handlesubmit= async(e)=>{
-        e.PreventDefault();
+        e.preventDefault();
         try{
-            await axios.post('/signin',{email,phone})
-            .then(()=>{console.log('Data Saved')})
-            .catch(e=>{console.log("Error connecting")})
+            await axios.post('http://localhost:8000/signin',{email,phone})
+            .then((res)=>{console.log('Data Saved')
+        if(res.data==='exist'){
+            alert("You are already a member,Put Order")
+            history('/login')
+        }
+        else if(res.data==='notexist'){
+            alert("Thank you, successively Joined")
+            history('/login')
+        }
+        })
+            .catch(e=>{console.log("Error connecting",e)})
         }
         catch(e){
             console.log("Error",e)
@@ -40,7 +51,7 @@ function Signin(){
     </div>
     
 <div>
-    <button>Send</button>
+    <button onClick={handlesubmit}>Join</button>
 </div>
     </form>
 </div>

@@ -31,7 +31,8 @@ try{ await axios.post('http://localhost:8000/login',
 
 )
 .then((res)=>{
-    history('/cart',{state:{id:email}})
+    console.log('Response:', res.data);
+    history('/cart', { state: { id: email, mes:message } });
 })
 .catch((e)=>{
     alert("Error")
@@ -51,6 +52,7 @@ console.log(`Error submitting the form`)
 
 <div className='userinput'>
     <form action='post'>
+    <p>Put order</p>
     <div>
     <label>Email</label>
     <input type='email' name='email' onChange={(e)=>{setEmail(e.target.value)}} required autoFocus placeholder='Email...'/>
@@ -66,7 +68,7 @@ console.log(`Error submitting the form`)
 <div>
     <button type='submit' onClick={handleSubmit}>Send</button>
     <p>or</p>
-    <h5><NavLink to='/signin'>Signin</NavLink></h5>
+    <h5><NavLink to='/signin'>Become member</NavLink></h5>
 </div>
 
     </form>
