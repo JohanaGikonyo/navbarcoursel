@@ -85,8 +85,8 @@ catch(e){
  
 
 app.get("/",(req,res)=>{
-    // res.sendFile(path.join(__dirname,"/index.html"))
-    res.json("Hi Johana")
+    res.sendFile(path.join(__dirname,"/index.html"))
+   
 });
 app.listen(port,()=>{
     console.log(`App running on port ${port}`)
