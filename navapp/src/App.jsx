@@ -139,7 +139,7 @@ function App() {
         <nav>
         
         <NavLink to='/' onClick={scrollToTop}>Products</NavLink>
-        <NavLink to='/login' onClick={scrollToTop}>Login</NavLink>
+        <NavLink to='/login' onClick={scrollToTop}>Membership</NavLink>
         <NavLink to='/about' onClick={scrollToTop}>About</NavLink>
         <NavLink to='/contact' onClick={scrollToTop}>Contact</NavLink>
      

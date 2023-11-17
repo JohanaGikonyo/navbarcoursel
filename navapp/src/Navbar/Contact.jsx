@@ -64,6 +64,7 @@ function Contact() {
 <div onClick={handlecall}><p>Call</p><box-icon type='solid' name='phone-call'></box-icon></div>
 <p>or</p>
 <div onClick={handlemessage}>Message<box-icon name='message'></box-icon></div>
+<a href='mailto:johanagikonyo552@gmail.com'>JKTECHS EMail</a>
       </div>
     </div>
   );

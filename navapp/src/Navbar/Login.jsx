@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+//import scroll from '../Helpers/products'
 
 
 import './home.css'
@@ -23,14 +24,10 @@ function Login(){
     return(
 <div>
 <div class="slider">
-    <Slider {...settings}>
-    <div><img src={img1} alt="Image 1"/></div>
-    <div><img src={img2} alt="Image 2"/></div>
-    <div><img src={img3} alt="Image 3"/></div>
-    <div><img src={img4} alt="Image 3"/></div>
-    <div><img src={img5} alt="Image 3"/></div>
-    <div><img src={img6} alt="Image 3"/></div>
-    </Slider>
+    {/* <Slider {...settings}>
+    
+    </Slider> */}
+    <h1>Waiting...</h1>
 </div>
 </div>
     );

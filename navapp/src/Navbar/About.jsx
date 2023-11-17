@@ -9,7 +9,7 @@ function About() {
 
 
   return (
-    <div className='carousel-container'>
+   
       <div className='image-slider'>
         <div className='columns '>
           {aboutimages.map((item,index) => (
@@ -48,7 +48,7 @@ function About() {
         </div>
         
       </div>
-    </div>
+   
   );
 }
 

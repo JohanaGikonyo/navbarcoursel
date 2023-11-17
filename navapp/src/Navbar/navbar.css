@@ -7,7 +7,7 @@
     background-color: black;
     margin: 0;
     width: 100vw;
-    
+    position: sticky;
     top: 0;
     color: white;
     
@@ -46,7 +46,8 @@
 }
 
 .links.open{
-    max-height: 500px;
+    max-height: 200%;
+    /* margin-top: 250px; */
 }
 .links.open box-icon{
     display: none;
@@ -81,24 +82,35 @@ padding: 10px;
     }
     .links{
         list-style: none;
-        padding: 0;
+       
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        position: absolute;
-        top: 60px;
-        right: 0px;
-        margin-right: 0px;
+       
+        align-items: center;
+        text-align: center;
+        /* margin-right: 0px; */
         border: 1px;
         width: 50%;
         background-color: black;
         border-radius: 5px;   
         max-height: 0;
-        height: 100%;
-        transition: max-height 1s ease;
+        height: auto;
+        transition:  1s ease;
     
     }
     .links.open box-icon{
         display: block;
+    }
+    .links.open{
+        height: auto;
+        padding: 100px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        margin-top: 20vh;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        
     }
 }

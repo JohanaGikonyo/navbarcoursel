@@ -49,7 +49,7 @@ document.removeEventListener('click', handleOutsideClick);
     <box-icon name='chat' type='solid' ></box-icon><li><Link to='/' onClick={scrollToTop}>Products</Link></li>
     <box-icon name='chat' type='solid' ></box-icon><li><Link to='/about' onClick={scrollToTop}>About</Link></li>
     <box-icon name='phone-call' ></box-icon> <li><Link to='/contact' onClick={scrollToTop}>Contact</Link></li>
-    <box-icon name='home' ></box-icon><li><Link to='/login'onClick={scrollToTop}>Login</Link></li>
+    <box-icon name='home' ></box-icon><li><Link to='/login'onClick={scrollToTop}>Membership</Link></li>
         </ul>  
     </nav>
   )
