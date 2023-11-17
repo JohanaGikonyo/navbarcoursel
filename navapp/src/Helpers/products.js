@@ -130,7 +130,7 @@ export const notes=[
 },
 {
     id:3,
-    image:img9,
+    image:img15,
     description:"Complete Charger",
     cost:"9 off",
     remaining:10
@@ -145,7 +145,7 @@ export const notes=[
 
 {
     id:5,
-    image:img11,
+    image:img1,
     description:"Type C charger",
     cost:"5 off",
     remaining:10
