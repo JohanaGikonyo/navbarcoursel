@@ -18,7 +18,7 @@ function Signin(){
      const handlesubmit= async(e)=>{
         e.preventDefault();
         try{
-            await axios.post('https://jktechsserver.vercel.app//signin',{email,phone})
+            await axios.post('https://jktechsserver.vercel.app/signin',{email,phone})
             .then((res)=>{console.log('Data Saved')
         if(res.data==='exist'){
             alert("You are already a member,Put Order")
