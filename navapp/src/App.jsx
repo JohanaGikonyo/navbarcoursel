@@ -7,6 +7,7 @@ import Login from './Navbar/Login'
 import Contact from './Navbar/Contact'
 import About from './Navbar/About'
 import Products from './Navbar/Products'
+import Signin from './Navbar/Signin'
 import ItemList    from './Navbar/Itemlist'
 import { Link, Route, Routes,NavLink } from 'react-router-dom'
 
@@ -90,6 +91,7 @@ function App() {
             <Route path='/login' element={<Login/>}></Route>
             <Route path='/about' element={<About/>}></Route>
           <Route path='/' element={<Products/>}></Route>
+          <Route path='/signin' element={<Signin/>}></Route>
             <Route path='/contact' element={<Contact/>}></Route>
             
         </Routes>
