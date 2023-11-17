@@ -9,6 +9,7 @@ import About from './Navbar/About'
 import Products from './Navbar/Products'
 import Signin from './Navbar/Signin'
 import ItemList    from './Navbar/Itemlist'
+import Cart from './Navbar/Cart'
 import { Link, Route, Routes,NavLink } from 'react-router-dom'
 
 function App() {
@@ -93,6 +94,7 @@ function App() {
           <Route path='/' element={<Products/>}></Route>
           <Route path='/signin' element={<Signin/>}></Route>
             <Route path='/contact' element={<Contact/>}></Route>
+            <Route path='/cart' element={<Cart/>}></Route>
             
         </Routes>
        
