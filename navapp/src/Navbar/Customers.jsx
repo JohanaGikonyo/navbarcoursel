@@ -34,7 +34,7 @@ function Customers() {
     
     <div className='customer d-flex justify-content-center flex-wrap'>
     <form ><input className='p-2' type='password' required onChange={(e)=>{setpassword(e.target.value)}} autoFocus placeholder='password...'/>
-    <button className='btn btn-primary m-3' onClick={()=>{setpassword(password)}}>Reset</button>
+  
     </form>
    
     {
