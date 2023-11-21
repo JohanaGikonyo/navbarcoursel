@@ -12,13 +12,13 @@ function Customers() {
 
 
   const handledelete=(id)=>{
-    axios.delete(`http://localhost:8000/delete/${id}`)
+    axios.delete(`https://jkserver-delta.vercel.app/delete/${id}`)
     .then(res=>{console.log(res) ,window.location.reload()})
     .catch(e=>{console.error(e)})
   }
 
   useEffect(() => {
-    axios.get('http://localhost:8000/getcustomers')
+    axios.get('https://jkserver-delta.vercel.app/getcustomers')
       .then(user => {
           console.log('Data from server:', user.data);
         setUser(user.data);
