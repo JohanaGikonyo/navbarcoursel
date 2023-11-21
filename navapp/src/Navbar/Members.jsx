@@ -16,9 +16,10 @@ function Signin(){
     const [email,setEmail]=useState('')
     const [phone, setPhone]=useState();
      const handlesubmit= async(e)=>{
+        if(email!=='' && phone!==''){
         e.preventDefault();
         try{
-            await axios.post('https://jktechsserver.vercel.app/signin',{email,phone})
+            await axios.post('http://localhost:8000/signin',{email,phone})
             .then((res)=>{console.log('Data Saved')
         if(res.data==='exist'){
             alert("You are already a member,Put Order")
@@ -33,6 +34,9 @@ function Signin(){
         }
         catch(e){
             console.log("Error",e)
+        }}
+        else{
+            alert("Please fill all the fields")
         }
 
 

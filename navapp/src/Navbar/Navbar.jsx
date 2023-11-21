@@ -51,6 +51,7 @@ document.removeEventListener('click', handleOutsideClick);
     <box-icon name='phone-call' ></box-icon> <li><Link to='/contact' onClick={scrollToTop}>Contact</Link></li>
     <box-icon name='home' ></box-icon><li><Link to='/login'onClick={scrollToTop}>Order</Link></li>
     <Link to='/signin' onClick={scrollToTop}>Membership</Link>
+    <Link to='/customers' onClick={scrollToTop}>Customers</Link>
     
         </ul>  
     </nav>

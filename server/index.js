@@ -26,6 +26,16 @@ const dataSchema=new mongoose.Schema(
 const customer=mongoose.model("customer",dataSchema)
  module.exports=customer;
 
+ app.delete('/delete/:id',(req,res)=>{
+    const id=req.params.id;
+    console.log('Deleting customer with ID:', id);
+    customer.findByIdAndDelete(id)
+    .then(deletedcustomer=>{res.json(deletedcustomer), console.log("deleted")})
+    .catch(err=>{res.json(err)})
+     })
+
+
+
 app.post('/login',async(req,res)=>{
     const {email,phone,message}=req.body;
     const newcustomer=new customer({
@@ -83,6 +93,9 @@ catch(e){
     .catch((e)=>{console.error(e)})
  })
  
+
+
+
 
 app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname,"/index.html"))

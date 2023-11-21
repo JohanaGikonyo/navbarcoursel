@@ -10,6 +10,8 @@ import Products from './Navbar/Products'
 import Signin from './Navbar/Members'
 import ItemList    from './Navbar/Itemlist'
 import Cart from './Navbar/Cart'
+import Customers from './Navbar/Customers'
+import Delete from './Navbar/Delete'
 import { Link, Route, Routes,NavLink } from 'react-router-dom'
 
 function App() {
@@ -95,7 +97,8 @@ function App() {
           <Route path='/signin' element={<Signin/>}></Route>
             <Route path='/contact' element={<Contact/>}></Route>
             <Route path='/cart' element={<Cart/>}></Route>
-            
+            <Route path='/delete' element={<Delete/>}></Route>
+            <Route path='/customers' element={<Customers/>}></Route>
         </Routes>
        
         <div className='upwardbtn'>

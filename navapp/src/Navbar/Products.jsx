@@ -4,8 +4,15 @@ import img1 from './images/picture.jpg'
 import './products.css';
 
 function Products() {
+
+ 
+
   return (
     <>
+
+
+
+    
 <div className='info'>
   <img src={img1} alt='image'/>
   <div className='info-child'>

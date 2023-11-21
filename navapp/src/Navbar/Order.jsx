@@ -25,8 +25,9 @@ function Login(){
     const [message, setMessage]=useState('')
     const history=useNavigate();
     const handleSubmit=async(e)=>{
+        if(email!==''&& message!=='' ){
         e.preventDefault();
-try{ await axios.post('https://jktechsserver.vercel.app/login',
+try{ await axios.post('http://localhost:8000/login',
 {email,phone,message}
 
 )
@@ -43,6 +44,9 @@ try{ await axios.post('https://jktechsserver.vercel.app/login',
 
 catch(e){
 console.log(`Error submitting the form`)
+}}
+else{
+    alert("You must fill all the details")
 }
 
     }
@@ -63,7 +67,7 @@ console.log(`Error submitting the form`)
     </div>
     <div>
     <label>Message</label>
-        <textarea  placeholder='Message...' rows={5} name='message' onChange={(e)=>{setMessage(e.target.value)}}/>
+        <textarea  placeholder='Message...' rows={5} name='message' onChange={(e)=>{setMessage(e.target.value)}} required/>
     </div>
 <div>
     <button type='submit' onClick={handleSubmit}>Send</button>
