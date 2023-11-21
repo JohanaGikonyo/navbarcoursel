@@ -24,7 +24,6 @@ const dataSchema=new mongoose.Schema(
 }
 );
 const customer=mongoose.model("customer",dataSchema)
- module.exports=customer;
 
  app.delete('/delete/:id',(req,res)=>{
     const id=req.params.id;
