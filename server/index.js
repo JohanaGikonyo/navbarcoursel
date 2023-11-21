@@ -97,7 +97,7 @@ catch(e){
 
 
 app.get("/",(req,res)=>{
-    res.sendFile(path.join(__dirname,"/index.html"))
+    res.send(res.json("hello johana"))
    
 })
 app.listen(PORT,()=>{
