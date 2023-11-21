@@ -5,7 +5,7 @@ require('dotenv').config()
 const cors=require('cors');
 const { json } = require('body-parser');
 const app=express();
-const port=process.env.port||3000;
+const PORT=process.env.PORT||3000;
 const MONGO_URI=process.env.MONGO_URI;
 app.use(json())
 app.use(cors());
@@ -100,6 +100,6 @@ app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname,"/index.html"))
    
 });
-app.listen(port,()=>{
-    console.log(`App running on port ${port}`)
+app.listen(PORT,()=>{
+    console.log(`App running on port ${PORT}`)
 })
