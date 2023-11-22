@@ -35,7 +35,10 @@ export const products=[
         image:img1,
         name:"Gold watch",
         cost:50,
-        remaining:6
+        remaining:6,
+        description:{info:"This gold watch is one of the best in the market. It is one of the latest in the market.",
+           imgs:img28, image:img29}
+
 
     },
     {
@@ -43,21 +46,27 @@ export const products=[
         image:img2,
         name:"USB 8GB && 16GB",
         cost:60,
-        remaining:7
+        remaining:7,
+        description:{info:"This USB is one of the best in the market. It is one of the latest in the market.",
+           imgs:img2, image:img2}
 
     },
     { id:15,
         image:img17,
         name:"Type B chargers",
         cost:"7 off",
-        remaining:10
+        remaining:10,
+        description:{info:"This Type B is one of the best in the market. It is one of the latest in the market.We also have type C chargers. Explore to see.",
+           imgs:img17, image:img11}
     },
     {
         id:3,
         image:img3,
         name:"Earphones && Headphones",
         cost:70,
-        remaining:10
+        remaining:10,
+        description:{info:"These Earphones && Headphones are  one of the best in the market. It is one of the latest in the market.",
+           imgs:img4, image:img4}
 
     },
     {
@@ -65,7 +74,11 @@ export const products=[
         image:img4,
         name:"Oringinal Headphones",
         cost:80,
-        remaining:20
+        remaining:20,
+        description:{info:"These Oringinal Headphones are  one of the best in the market. It is one of the latest in the market.",
+           imgs:img4, image:img4}
+
+        
 
     },
     {
@@ -73,21 +86,28 @@ export const products=[
         image:img5,
         name:"Smart watches",
         cost:30,
-        remaining:5
+        remaining:5,
+        description:{info:"These Smart watches are  one of the best in the market. It is one of the latest in the market.",
+           imgs:img5, image:img5}
+        
 
     },
     { id:17,
         image:img10,
         name:"phone Covers",
         cost:"3 off",
-        remaining:10
+        remaining:10,
+        description:{info:"These Phone Covers are  one of the best in the market. It is one of the latest in the market.",
+           imgs:img10, image:img10}
     },
     {
         id:6,
         image:img6,
         name:"Normal Watches",
         cost:50,
-        remaining:8
+        remaining:8,
+        description:{info:"These Normal watches are  one of the best in the market. It is one of the latest in the market.",
+           imgs:img5, image:img5}
 
     },
     {
@@ -95,7 +115,9 @@ export const products=[
         image:img13,
         name:"Bluetooth speakers",
         cost:"50 off",
-        remaining:10
+        remaining:10,
+        description:{info:"These Bluetooth speakers are  one of the best in the market. It is one of the latest in the market.",
+           imgs:img13, image:img13}
     }
 ]
 export const notes=[
@@ -119,28 +141,36 @@ export const notes=[
     image:img7,
     description:"phoneBatteries",
     cost:"5 off",
-    remaining:10
+    remaining:10,
+    descriptions:{info:"These Phone batteries are  one of the best brands in the market. It is one of the latest in the market. Purchase one please",
+    imgs:img7, image:img7}
 },
 {
     id:2,
     image:img8,
     description:"Bulbs",
     cost:"3 off",
-    remaining:10
+    remaining:10,
+    descriptions:{info:"These Smart Bulbs are  one of the best in the market. It is one of the latest in the market. No more darkness in your home",
+    imgs:img8, image:img8}
 },
 {
     id:3,
     image:img15,
     description:"Complete Charger",
     cost:"9 off",
-    remaining:10
+    remaining:10,
+    descriptions:{info:"These comes with Full package and  are  one of the best in the market. It is one of the latest in the market.",
+    imgs:img15, image:img15}
 },
 {
     id:4,
     image:img10,
     description:"phone Covers",
     cost:"3 off",
-    remaining:10
+    remaining:10,
+    descriptions:{info:"These phone covers are  one of the best in the market. It is one of the latest in the market.",
+    imgs:img10, image:img10}
 },
 
 {
@@ -148,49 +178,63 @@ export const notes=[
     image:img1,
     description:"Type C charger",
     cost:"5 off",
-    remaining:10
+    remaining:10,
+    descriptions:{info:"Type C charger are  one of the best in the market. It is one of the latest in the market.",
+    imgs:img1, image:img1}
 },
 {
     id:6,
     image:img12,
     description:"Memory Cards",
     cost:"5 off",
-    remaining:12
+    remaining:12,
+    descriptions:{info:"Memory Cards are  one of the best in the market. It is one of the latest in the market. Your Storage is sorted.",
+    imgs:img12, image:img12}
 },
 {
     id:7,
     image:img13,
     description:"Bluetooth speakers",
     cost:"5 off",
-    remaining:10
+    remaining:10,
+    descriptions:{info:"Bluetooth speakers are  one of the best in the market. It is one of the latest in the market. Your Storage is sorted. Your music is sorted.",
+    imgs:img13, image:img13}
 },
 {
     id:8,
     image:img14,
     description:"Screen  Protectors",
     cost:"2 off",
-    remaining:10
+    remaining:10,
+    descriptions:{info:"Screen  Protectors are  one of the best in the market. It is one of the latest in the market. Your Storage is sorted. Your phone will never crack.",
+    imgs:img14, image:img14}
 },
 {
     id:9,
     image:img15,
     description:"Complete Sockets",
     cost:"4 off",
-    remaining:10
+    remaining:10,
+    descriptions:{info:"Complete Sockets are  one of the best in the market. It is one of the latest in the market.Phone will never run out of battery.",
+    imgs:img15, image:img15}
 },
 {
     id:10,
     image:img16,
     description:"Chargerble Torches",
     cost:"7 off",
-    remaining:10
+    remaining:10,
+    descriptions:{info:"Chargerble Torches are  one of the best in the market. It is one of the latest in the market.No worries at night again.",
+    imgs:img16, image:img16}
 },
 {
     id:11,
     image:img17,
     description:"Type B chargers",
     cost:"7 off",
-    remaining:10
+    remaining:10,
+    descriptions:{info:"Type B chargers are  one of the best in the market. It is one of the latest in the market.Phones are now sorted.",
+    imgs:img17, image:img17}
 }
 
   ]

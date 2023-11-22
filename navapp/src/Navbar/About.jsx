@@ -11,20 +11,21 @@ function About() {
   return (
    
       <div className='image-slider'>
-        <div className='columns '>
+        <div className='columns column'>
           {aboutimages.map((item,index) => (
             <div key={item.id} className='aboutimages'>
             <img  src={item.image} alt={`image-${index}`} />
-            <h3 className='desc'>{item.description}</h3>
-            <h4 className='costs'>$ {item.cost}</h4>
+            <h3 className='desc '>{item.description}</h3>
+            <h4 className=' btn btn-success'>$ {item.cost}</h4>
             <h5>Orders left :{"  "+item.remaining}</h5>
-            <button className='cart'>Add Cart</button>
+            <button className='btn btn-primary'>View</button>
             </div>
           ))}
           
         </div>
         
-        <div className='columndesc'>
+        <div className='columndesc '>
+        <div className='well info'>
         
         <h2>JKTECHS iS a Business that was started in the Year 2020.</h2>
          <h3>It was started by the CEO Madam Julia Kihiu, in Laikipia County, and it has now grown, slowly.</h3> 
@@ -34,14 +35,15 @@ function About() {
           </h3>
           <p>Our products are Oringinal copies, directly from manufactures</p>
           <h3>Visit us at Nyahururu Shopping center, or contact us.</h3>
+          </div>
          </div>
          {scroll.map((item,index) => (
             <div key={item.id} className='aboutimages'>
             <img  src={item.image} alt={`image-${index + aboutimages.length}`} />
             <h3 className='desc'>{item.description}</h3>
-            <h4 className='costs'>$ {item.cost}</h4>
+            <h4 className='btn btn-success'>$ {item.cost}</h4>
             <h5>Orders left :{"  "+item.remaining}</h5>
-            <button className='cart'>Add Cart</button>
+            <button className='btn btn-primary'>View</button>
             
             </div>
           ))}  

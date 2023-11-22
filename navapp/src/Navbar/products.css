@@ -1,9 +1,10 @@
 .products{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    text-align: center;
     
 }
 .eachitem{
@@ -156,14 +157,17 @@ border-radius: 10px;
   
   .image-slider {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
-    column-gap: 20px; /* Adjust the gap between columns as needed */
-    /* overflow: hidden; */
-    row-gap: 20px;
-    padding: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    /* margin: 30px; */
+    grid-template-columns: 1fr 1fr; 
+    /* column-gap: 20px; */
+   
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+  
+    grid-auto-flow: column;
     overflow-y: scroll;
+    grid-template-rows: repeat(0,100px);
+  
+  
    
     
     
@@ -173,6 +177,10 @@ border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
     flex-wrap: wrap;
   }
   .columns .aboutimages{
@@ -188,6 +196,7 @@ border-radius: 10px;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    text-align: center;
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
@@ -213,6 +222,40 @@ border-radius: 10px;
     text-align: start;
     margin-right: 0px;
 
+  }
+  .details_box{
+    position: absolute;
+    z-index: 1;
+   top: 0%;
+   padding: 4px;
+   position:fixed;
+   display: flex;
+   box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+   width: 100%;
+   
+   
+  }
+ .details_box_conent{
+  display: flex;
+  flex-direction: row;
+ }
+  .details_box .image_box {
+    padding: 3px;
+    background-color: beige;
+    
+
+  }
+  .details_box .image_details{
+display: flex;
+flex-direction: column;
+background-color: beige;
+border-radius: 10px;
+  }
+  .details_box .image_details h2{
+    color: red;
+  }
+  .details_box .image_details h3{
+    color: blue;
   }
   
   
