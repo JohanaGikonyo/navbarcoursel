@@ -68,9 +68,12 @@ overscroll-behavior-inline: contain;
   .cost{
     position: absolute;
     background-color: rgb(74, 245, 74);
-    top: 50%;
+    top: 30%;
+    display: none;
+    
     width: 50px;
     border-radius: 10px;
+
   }
   .costs{
 border-radius: 10px;
