@@ -36,10 +36,10 @@ function Products() {
                     <img src={y.descriptions.image}></img>
                   </div>
                     <div className='image_details'>
-                    <h2>{y.name}</h2>
-                    <h2>Cost : ${y.cost}</h2>
+                    <p>{y.name}</p>
+                    <h5>Cost : ${y.cost}</h5>
                     <h4>Remaining :{y.remaining}</h4>
-                    <h3>{y.descriptions.info}</h3>
+                    <p>{y.descriptions.info}</p>
                     <button className='btn btn-primary m-3'>Add to Cart</button>
                     </div>
                     
@@ -77,9 +77,9 @@ function Products() {
                     <div className='image_details'>
                     <h2>{x.name}</h2>
                     
-                    <h2>Cost : ${x.cost}</h2>
-                    <h4>Remaining :{x.remaining}</h4>
-                    <h3>{x.description.info}</h3>
+                    <p>Cost : ${x.cost}</p>
+                    <h5>Remaining :{x.remaining}</h5>
+                    <p>{x.description.info}</p>
                     <button className='btn btn-primary m-3'>Add to Cart</button>
                     </div>
                     

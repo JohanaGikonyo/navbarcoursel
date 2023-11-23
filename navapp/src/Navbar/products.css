@@ -249,14 +249,17 @@ border-radius: 10px;
   .details_box{
     position: absolute;
     z-index: 1;
-   top: 0%;
+   top: 45%;
    padding: 4px;
    position:fixed;
    display: flex;
    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
-   width: 100%;
+   width: 50%;
    border: none;
+   border-radius: 10px;
    outline: none;
+   right: 25%;
+
 
    
    
@@ -277,8 +280,11 @@ flex-direction: column;
 background-color: beige;
 border-radius: 10px;
   }
-  .details_box .image_details h2{
+  .details_box .image_details h5, p{
     color: red;
+    border-radius: 10px;
+    background-color: azure;
+    margin: 3px;
   }
   .details_box .image_details h3{
     color: blue;
