@@ -6,9 +6,15 @@ import './products.css';
 function Products() {
   const [details, setDetails] = useState([])
   const [close, setClose]=useState(false)
+  const [scroll_close, setScroll_close]=useState(false)
   const detailpage = (product) => {
     setDetails([{ ...product }])
    setClose(true)
+
+  }
+  const scroll_detailpage = (products) => {
+    setDetails([{ ...products }])
+   setScroll_close(true)
 
   }
 
@@ -16,26 +22,24 @@ function Products() {
 
   return (
     <>
-      {close?(<div className='detail_container'>
+      {scroll_close?(<div className='detail_container'>
         <div className='detail_contant'>
           {
-            details.map((x) => {
+            details.map((y) => {
               return (
                 <div className='details_box btn btn-default'>
-                <div onClick={()=>{setClose(false)}}><box-icon name='x' ></box-icon></div>
+                <div onClick={()=>{setScroll_close(false)}}><box-icon name='x' ></box-icon></div>
                 <div className='details_box_conent'>
                   <div className='image_box'>
-                  <img src={x.image} alt={x.name} />
-                  <img src={x.description.imgs}></img>
-                    <img src={x.description.image}></img>
+                  <img src={y.image} alt={y.description} />
+                  <img src={y.descriptions.imgs}></img>
+                    <img src={y.descriptions.image}></img>
                   </div>
-                
-      
                     <div className='image_details'>
-                    <h2>{x.name}</h2>
-                    <h2>Cost : ${x.cost}</h2>
-                    <h4>Remaining :{x.remaining}</h4>
-                    <h3>{x.description.info}</h3>
+                    <h2>{y.name}</h2>
+                    <h2>Cost : ${y.cost}</h2>
+                    <h4>Remaining :{y.remaining}</h4>
+                    <h3>{y.descriptions.info}</h3>
                     <button className='btn btn-primary m-3'>Add to Cart</button>
                     </div>
                     
@@ -63,19 +67,19 @@ function Products() {
                 <div onClick={()=>{setClose(false)}}><box-icon name='x' ></box-icon></div>
                 <div className='details_box_conent'>
                   <div className='image_box'>
-                  
-                  <img src={x.descriptions.imgs}></img>
-                    <img src={x.descriptions.image}></img>
-                    <img src={x.image} alt={x.name} />
+                  <img src={x.image} alt={x.name} />
+                  <img src={x.description.image}></img>
+                    <img src={x.description.imgs}></img>
+                    
                   </div>
                 
       
                     <div className='image_details'>
-                    <h2>{x.description}</h2>
+                    <h2>{x.name}</h2>
                     
                     <h2>Cost : ${x.cost}</h2>
                     <h4>Remaining :{x.remaining}</h4>
-                    <h3>{x.descriptions.info}</h3>
+                    <h3>{x.description.info}</h3>
                     <button className='btn btn-primary m-3'>Add to Cart</button>
                     </div>
                     
@@ -113,7 +117,7 @@ function Products() {
             <div>
               <h3 className='desc'>{items.description}</h3>
               <h4 className='cost'>$ {items.cost}</h4>
-              <div><button className='cart btn btn-primary m-3' onClick={() => { detailpage(items) }}>View</button></div>
+              <div><button className='cart btn btn-primary m-3' onClick={() => { scroll_detailpage(items) }}>View</button></div>
 
             </div>
 

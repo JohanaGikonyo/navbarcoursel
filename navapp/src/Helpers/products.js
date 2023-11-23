@@ -114,10 +114,19 @@ export const products=[
         id:13,
         image:img13,
         name:"Bluetooth speakers",
-        cost:"50 off",
+        cost:"4 off",
         remaining:10,
-        description:{info:"These Bluetooth speakers are  one of the best in the market. It is one of the latest in the market.",
-           imgs:img13, image:img13}
+        description:{info:"These Bluetooth speakers are  one of the best in the market. It is one of the latest in the market. Your music is catered for.",
+           imgs:img18, image:img19}
+    },
+    {
+        id:14,
+        image:img15,
+        name:"Complete Sockets",
+        cost:"5 off",
+        remaining:10,
+        description:{info:"These Sockets are  one of the best in the market. It is one of the latest in the market. Your Lighting, Electricity is sorted.",
+           imgs:img18, image:img18}
     }
 ]
 export const notes=[
@@ -176,7 +185,7 @@ export const notes=[
 {
     id:5,
     image:img1,
-    description:"Type C charger",
+    description:"Gold Watch",
     cost:"5 off",
     remaining:10,
     descriptions:{info:"Type C charger are  one of the best in the market. It is one of the latest in the market.",
