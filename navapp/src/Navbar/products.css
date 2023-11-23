@@ -249,7 +249,7 @@ border-radius: 10px;
   .details_box{
     position: absolute;
     z-index: 1;
-   top: 45%;
+   
    padding: 4px;
    position:fixed;
    display: flex;
@@ -259,6 +259,7 @@ border-radius: 10px;
    border-radius: 10px;
    outline: none;
    right: 25%;
+   top: 25%;
 
 
    
