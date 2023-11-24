@@ -97,7 +97,7 @@ catch(e){
 
 
 app.get("/",(req,res)=>{
-    res.send({ message: "hello johana" });
+    res.send({ message: "hello johana Kihiu" });
    
 })
 app.listen(PORT,()=>{
