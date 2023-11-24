@@ -27,7 +27,7 @@ function Login(){
     const handleSubmit=async(e)=>{
         if(email!==''&& message!=='' ){
         e.preventDefault();
-try{ await axios.post('http://localhost:8000/login',
+try{ await axios.post('https://jktechsserver.onrender.com/login',
 {email,phone,message}
 
 )

@@ -12,13 +12,13 @@ function Customers() {
 
 
   const handledelete=(id)=>{
-    axios.delete(`http://localhost:8000/delete/${id}`)
+    axios.delete(`https://jktechsserver.onrender.com/delete/${id}`)
     .then(res=>{console.log(res) ,window.location.reload()})
     .catch(e=>{console.error(e)})
   }
 
   useEffect(() => {
-    axios.get('http://localhost:8000/getcustomers')
+    axios.get('https://jktechsserver.onrender.com/getcustomers')
       .then(user => {
           console.log('Data from server:', user.data);
         setUser(user.data);

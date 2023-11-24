@@ -19,7 +19,7 @@ function Signin(){
         if(email!=='' && phone!==''){
         e.preventDefault();
         try{
-            await axios.post('http://localhost:8000/signin',{email,phone})
+            await axios.post('https://jktechsserver.onrender.com/signin',{email,phone})
             .then((res)=>{console.log('Data Saved')
         if(res.data==='exist'){
             alert("You are already a member,Put Order")
