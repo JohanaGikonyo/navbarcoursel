@@ -282,7 +282,7 @@ flex-direction: column;
 background-color: beige;
 border-radius: 10px;
   }
-  .details_box .image_details h5, p{
+  .details_box .image_details h5{
     color: red;
     border-radius: 10px;
     background-color: azure;
