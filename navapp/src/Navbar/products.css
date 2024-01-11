@@ -12,15 +12,15 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: bisque;
-    width: auto;
+    background-color: rgb(235, 233, 232);
+    width: 200px;
     margin: 5px;
     border-radius: 10px;
     align-items: center;
   text-align: center;
 }
 .descriptions{
-  background-color: bisque;
+  background-color: rgb(240, 233, 225);
     
     border-radius: 10px;
 
@@ -51,8 +51,9 @@ justify-content: center;
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
-      background-color: bisque;
-      width: auto;
+      background-color: rgb(243, 240, 236);
+      width: 150px;
+      height: 500px;
       margin: 10px;
       border-radius: 10px;
       padding: 10px;
