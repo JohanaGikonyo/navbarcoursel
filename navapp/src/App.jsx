@@ -13,7 +13,7 @@ import Cart from './Navbar/Cart'
 import Customers from './Navbar/Customers'
 import Delete from './Navbar/Delete'
 import { Link, Route, Routes,NavLink } from 'react-router-dom'
-
+import { helperContext } from './Helpers/context'
 function App() {
  const scrollToTop = () => {
     window.scrollTo({
@@ -85,8 +85,11 @@ function App() {
   const handlemessage=()=>{
     window.location.href=`sms:${254710718619}`
   }
+
+  const [page, setpage]=useState('main')
   return (
     <>
+
     
       <Navbar/>
       <ItemList/>

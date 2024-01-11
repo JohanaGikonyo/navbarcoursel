@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { products, scroll } from '../Helpers/products';
 import img1 from './images/picture.jpg'
 import './products.css';
-
+import { helperContext } from '../Helpers/context';
+import Cart from './Cart';
 function Products() {
   const [details, setDetails] = useState([])
   const [close, setClose]=useState(false)
@@ -18,10 +19,16 @@ function Products() {
 
   }
 
-
-
+const [page, setpage]=useState('main')
+const [cost, setcost]=useState('')
+const [view, setView]=useState(false)
   return (
     <>
+    <helperContext.Provider value={{page, setpage, cost, setcost}}>
+         {page==='cart' && <Cart/>}
+         {page==='product' && <Products/>}
+    </helperContext.Provider>
+    <button onClick={()=>{setpage('cart')}} className='seecart btn btn-danger'>See Cart</button>
       {scroll_close?(<div className='detail_container'>
         <div className='detail_contant'>
           {
@@ -40,7 +47,8 @@ function Products() {
                     <h5>Cost : ${y.cost}</h5>
                     <h4>Remaining :{y.remaining}</h4>
                     <p>{y.descriptions.info}</p>
-                    <button className='btn btn-primary m-3'>Add to Cart</button>
+                    <button className='btn btn-primary m-3 ' onClick={()=>{setcost(prevCost=>prevCost+" cost: " +" "+'\n'+" "+y.cost);setView(prev=>!prev)}}>Shop</button>
+                    {view?<button className='btn btn-success'>Thank You</button>:""}
                     </div>
                     
                     </div>
@@ -80,7 +88,8 @@ function Products() {
                     <p>Cost : ${x.cost}</p>
                     <h5>Remaining :{x.remaining}</h5>
                     <p>{x.description.info}</p>
-                    <button className='btn btn-primary m-3'>Add to Cart</button>
+                    <button className='btn btn-primary m-3' onClick={()=>{setcost(prevCost=>prevCost+"Item: "+" "+x.name+" "+"  cost: " +" "+"\n"+" "+x.cost+" ") ;setView(prev=>!prev)}}>Shop</button>
+                    {view?<button className='btn btn-success'>Thank You</button>:""}
                     </div>
                     
                     </div>

@@ -291,6 +291,11 @@ border-radius: 10px;
   .details_box .image_details h3{
     color: blue;
   }
+  .seecart{
+    bottom: 0;
+    position: fixed;
+    left: 0;
+  }
   
   
   
